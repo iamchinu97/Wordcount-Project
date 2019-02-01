@@ -6,7 +6,7 @@ def homepage(request):
 
 def aboutpage(request):
     return render(request,'about.html')
-
+    
 def countwords(request):
     fulltext=request.GET['fulltext']
     wordlist=fulltext.split()
